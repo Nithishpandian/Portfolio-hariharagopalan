@@ -34,7 +34,9 @@ const Hero = () => {
             </button>
           </div>
         </div>
-        <div></div>
+        <div className=" relative">
+          <div className="absolute w-[500px] h-[400px] blur-3xl z-0 from-zinc-950 right-0 top-0"></div>
+        </div>
       </div>
       <LogoContainer />
     </>

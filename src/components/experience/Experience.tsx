@@ -6,8 +6,9 @@ import { MdOutlineWork } from "react-icons/md";
 
 const Experience = () => {
   return (
-    <div className=" grid grid-cols-2 items-center justify-center gap-y-5 gap-x-8 py-4 px-20">
-      <div className=" flex justify-center px-1">
+    <div className=" grid grid-cols-2 items-center justify-center gap-y-5 gap-x-8 py-10 px-20 relative">
+      <div className="absolute w-full h-full blur-2xl z-0 bg-gradient-radial from-neutral-900 left-0 top-0"></div>
+      <div className=" flex justify-center px-1 z-0">
         <div className=" w-[500px] flex flex-col gap-0.5">
           <div className=" flex items-center gap-3 font-bold text-stone-50 text-3xl">
             {" "}
@@ -31,7 +32,7 @@ export default Experience;
 
 const ExperienceCard = () => {
   return (
-    <div className=" flex items-center justify-center">
+    <div className=" flex items-center justify-center z-0">
       <div className=" border-b border-stone-500 py-4 px-1 w-[550px] flex items-center justify-between">
         <div className=" flex items-center gap-2">
           <Image
