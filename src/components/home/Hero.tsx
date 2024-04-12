@@ -21,7 +21,7 @@ const Hero = () => {
             <br />
             Cybersecurity Expert & Consultant
           </h1>
-          <p className=" ">
+          <p className=" font-Roboto">
             As an Associate Professor at Sri Ramakrishna Engineering College, I
             have been teaching and researching various aspects of cybersecurity,
             blockchain, networking, and programming for over sixteen years. I
@@ -29,13 +29,13 @@ const Hero = () => {
             V12 certification from EC-Council.
           </p>
           <div>
-            <button className=" flex items-center gap-2 hover:gap-4 duration-300 border border-primary rounded bg-primary text-stone-50 font-semibold py-1.5 px-4">
-              <span>Contact</span> <FaArrowRight />
+            <button className=" font-Noto-sans flex items-center gap-2 hover:gap-4 duration-300 border border-primary rounded bg-primary text-stone-50 font-semibold py-1.5 px-4">
+              <span className=" text-lg">Contact</span> <FaArrowRight className="" />
             </button>
           </div>
         </div>
-        <div className=" relative">
-          <div className="absolute w-[500px] h-[400px] blur-3xl z-0 from-zinc-950 right-0 top-0"></div>
+        <div className=" relative h-full">
+          <div className="absolute w-[500px] h-[400px] bg-gradient-radial blur-3xl z-0 from-[#240606] right-0 top-0"></div>
         </div>
       </div>
       <LogoContainer />

@@ -16,6 +16,11 @@ const config: Config = {
       colors: {
         "primary-black":"#0C0D08",
         "primary":"#C92828",
+      },
+      fontFamily: {
+        "Noto-sans": ["Noto Sans", "sans-serif"],
+        "Roboto":["Roboto", "sans-serif"],
+        "Oswald":["Oswald", "sans-serif"],
       }
     },
   },

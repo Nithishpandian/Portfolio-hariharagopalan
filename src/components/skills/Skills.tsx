@@ -35,7 +35,7 @@ export default Skills;
 
 const SkillsCard = () => {
   return (
-    <div className=" flex items-center gap-3 text-stone-200 font-semibold bg-stone-800 shadow-lg border border-stone-700 backdrop-filter backdrop-blur-lg bg-opacity-30 px-5 py-3 rounded-md h-full w-full">
+    <div className=" hover:border-primary hover:text-primary duration-500 cursor-pointer flex items-center gap-3 text-stone-200 font-semibold bg-stone-800 shadow-lg border border-stone-700 backdrop-filter backdrop-blur-lg bg-opacity-30 px-5 py-3 rounded-md h-full w-full">
       <SiKalilinux className=" text-3xl" />
       <p>Kali linux</p>
     </div>

@@ -2,11 +2,11 @@ import React from "react";
 
 const AboutContainer = () => {
   return (
-    <div className=" grid grid-cols-3 gap-10 justify-around px-12 py-24 relative">
+    <div className=" grid grid-cols-3 gap-10 justify-around px-12 pt-24 pb-16 relative">
       <div className="absolute mt-16 w-[650px] h-[450px] blur-3xl z-0 bg-gradient-conic from-zinc-950 left-0 top-0"></div>
       <div className=" flex flex-col gap-5 z-0">
         <h2 className=" text-primary font-bold text-lg">ABOUT ME</h2>
-        <h1 className=" text-[#fafafa] text-[2.6rem] leading-snug font-extrabold">
+        <h1 className=" text-[#fafafa] text-[2.6rem] leading-snug font-black">
           A Cyber Security Specialist & Consultant
         </h1>
       </div>

@@ -4,8 +4,8 @@ import indiaFlag from "../../assets/india-flag.png";
 
 const Testimonials = () => {
   return (
-    <div className=" grid grid-cols-4 grid-rows-2 gap-4 items-center justify-between px-10 py-24">
-      <div className=" flex flex-col gap-5 col-span-2 bg-gradient-to-tr from-stone-900 to-stone-800 shadow-lg border border-stone-700 backdrop-filter backdrop-blur-lg bg-opacity-30 px-5 py-5 rounded-md h-full w-full">
+    <div className=" grid grid-cols-4 grid-rows-2 gap-4 items-center justify-between px-10 pt-20 pb-24">
+      <div className=" flex flex-col gap-5 col-span-2 bg-gradient-to-tr from-stone-900 to-stone-800 shadow-lg border border-stone-700 backdrop-filter backdrop-blur-lg bg-opacity-30 px-5 py-5 rounded-md h-full w-full cursor-pointer">
         <div className=" flex items-center gap-3">
           <Image
             src={indiaFlag}
@@ -28,7 +28,7 @@ const Testimonials = () => {
           reprehenderit perferendis, voluptatem asperiores voluptas tenetur.
         </p>
       </div>
-      <div className=" flex flex-col gap-5 bg-gradient-to-t from-neutral-900 to-neutral-800 shadow-lg border border-stone-700 backdrop-filter backdrop-blur-lg bg-opacity-30 px-5 py-5 rounded-md h-full w-full">
+      <div className=" flex flex-col gap-5 bg-gradient-to-t from-neutral-900 to-neutral-800 shadow-lg border border-stone-700 backdrop-filter backdrop-blur-lg bg-opacity-30 px-5 py-5 rounded-md h-full w-full cursor-pointer">
         <div className=" flex items-center gap-3">
           <Image
             src={indiaFlag}
@@ -48,7 +48,7 @@ const Testimonials = () => {
           consequatur nulla!
         </p>
       </div>
-      <div className=" flex flex-col gap-5 row-span-2 bg-gradient-to-l from-zinc-900 to-zinc-800 shadow-lg border border-stone-700 backdrop-filter backdrop-blur-lg bg-opacity-30 px-5 py-5 rounded-md h-full w-full">
+      <div className=" flex flex-col gap-5 row-span-2 bg-gradient-to-l from-zinc-900 to-zinc-800 shadow-lg border border-stone-700 backdrop-filter backdrop-blur-lg bg-opacity-30 px-5 py-5 rounded-md h-full w-full cursor-pointer">
         <div className=" flex items-center gap-3">
           <Image
             src={indiaFlag}
@@ -71,7 +71,7 @@ const Testimonials = () => {
           molestiae pariatur laborum. Minima, quod temporibus!
         </p>
       </div>
-      <div className=" flex flex-col gap-5 bg-gradient-to-tr from-stone-900 to-zinc-800 shadow-lg border border-stone-700 backdrop-filter backdrop-blur-lg bg-opacity-30 px-5 py-5 rounded-md h-full w-full">
+      <div className=" flex flex-col gap-5 bg-gradient-to-tr from-stone-900 to-zinc-800 shadow-lg border border-stone-700 backdrop-filter backdrop-blur-lg bg-opacity-30 px-5 py-5 rounded-md h-full w-full cursor-pointer">
         <div className=" flex items-center gap-3">
           <Image
             src={indiaFlag}
@@ -91,7 +91,7 @@ const Testimonials = () => {
           eligendi aliquam odio.
         </p>
       </div>
-      <div className=" flex flex-col gap-5 col-span-2 bg-gradient-to-tl from-stone-900 via-stone-800 to-zinc-800 shadow-lg border border-stone-700 backdrop-filter backdrop-blur-lg bg-opacity-30 px-5 py-5 rounded-md h-full w-full">
+      <div className=" flex flex-col gap-5 col-span-2 bg-gradient-to-tl from-stone-900 via-stone-800 to-zinc-800 shadow-lg border border-stone-700 backdrop-filter backdrop-blur-lg bg-opacity-30 px-5 py-5 rounded-md h-full w-full cursor-pointer">
         <div className=" flex items-center gap-3">
           <Image
             src={indiaFlag}
