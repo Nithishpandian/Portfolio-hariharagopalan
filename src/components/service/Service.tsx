@@ -26,7 +26,7 @@ export default Service;
 
 const ServiceCard = () => {
   return (
-    <div className="group cursor-pointer duration-500 flex flex-col gap-3 bg-gradient-to-br from-stone-900 to-stone-800 shadow-lg border border-stone-700 hover:border-stone-500 backdrop-filter backdrop-blur-lg bg-opacity-30 px-6 py-6 rounded-md h-full w-full">
+    <div className=" group cursor-pointer duration-500 flex flex-col gap-3 bg-gradient-to-br from-stone-900 to-stone-800 shadow-lg border border-stone-700 hover:border-stone-500 backdrop-filter backdrop-blur-lg bg-opacity-30 px-6 py-6 rounded-md h-full w-full">
       <div className=" flex justify-between items-center">
         <h1 className=" text-stone-200 text-2xl font-bold">Network Security</h1>
         <p className=" text-stone-400 flex justify-end">

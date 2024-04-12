@@ -15,7 +15,8 @@ const config: Config = {
       },
       colors: {
         "primary-black":"#0C0D08",
-        "primary":"#C92828",
+        // "primary":"#C92828",
+        "primary":"#3d8054",
       },
       fontFamily: {
         "Noto-sans": ["Noto Sans", "sans-serif"],

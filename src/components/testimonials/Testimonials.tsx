@@ -5,7 +5,7 @@ import indiaFlag from "../../assets/india-flag.png";
 const Testimonials = () => {
   return (
     <div className=" grid grid-cols-4 grid-rows-2 gap-4 items-center justify-between px-10 pt-20 pb-24 relative">
-      <div className="absolute w-full h-[500px] bg-gradient-radial blur-3xl z-0 from-[#050000] right-0 top-[20%]"></div>
+      <div className="absolute w-full h-[500px] bg-gradient-radial blur-3xl z-0 from-[#030805] right-0 top-[20%]"></div>
       <div className=" group hover:border-stone-500 hover:rounded duration-500 flex flex-col gap-5 col-span-2 bg-gradient-to-tr from-stone-900 to-stone-800 shadow-lg border border-stone-700 backdrop-filter backdrop-blur-lg bg-opacity-30 px-5 py-5 rounded-md h-full w-full cursor-pointer">
         <div className=" flex items-center gap-3">
           <Image
