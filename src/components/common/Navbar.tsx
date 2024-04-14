@@ -3,10 +3,10 @@ import React from "react";
 const Navbar = () => {
   return (
     <div className=" flex justify-between items-center px-14 py-5 border-b border-stone-600">
-      <h1 className=" text-[1.3rem] font-black text-primary font-Oswald">
+      <h1 className="font-space-mono font-black text-2xl text-primary transition-colors duration-300 cursor-pointer">
         HARIHARA GOPALAN
       </h1>
-      <div className=" flex items-center gap-4 font-medium text-stone-200 font-Roboto ">
+      <div className=" flex items-center gap-5 font-medium text-stone-200 font-Noto-sans">
         <button className="hover:text-primary duration-500">Home</button>
         <button className="hover:text-primary duration-500">About</button>
         <button className="hover:text-primary duration-500">Skills</button>
