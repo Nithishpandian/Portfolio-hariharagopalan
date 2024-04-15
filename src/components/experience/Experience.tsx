@@ -32,7 +32,7 @@ export default Experience;
 
 const ExperienceCard = () => {
   return (
-    <div className=" group flex items-center justify-center z-0 cursor-pointer">
+    <div className=" group flex items-center justify-center z-0 cursor-pointer" id="Experience">
       <div className=" border-b border-stone-500 py-4 group-hover:px-4 duration-500 px-1 w-[550px] flex items-center justify-between">
         <div className=" flex items-center gap-2">
           <Image

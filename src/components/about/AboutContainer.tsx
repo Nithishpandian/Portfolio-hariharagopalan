@@ -30,7 +30,7 @@ const AboutContainer = () => {
   }, []);
 
   return (
-    <div className="grid grid-cols-3 gap-10 justify-around px-12 pt-24 pb-16 relative">
+    <div className="grid grid-cols-3 gap-10 justify-around px-12 pt-24 pb-16 relative" id="About">
       <div className="absolute mt-16 w-[650px] h-[450px] blur-3xl z-0 bg-gradient-conic from-zinc-950 left-0 top-0"></div>
       <div className="flex flex-col gap-5 z-0">
         <h2 className="text-primary font-bold text-lg">ABOUT ME</h2>

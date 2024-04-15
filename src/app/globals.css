@@ -7,6 +7,20 @@
 @tailwind utilities;
 
 /* Custom Styles */
+html,
 body {
+    scroll-behavior: smooth;
     color: rgb(236, 236, 236);
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+    background: rgb(247, 247, 247);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(196, 196, 196);
 }

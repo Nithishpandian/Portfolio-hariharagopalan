@@ -9,7 +9,7 @@ import heroImg from "../../assets/hero-nobg.png";
 const Hero = () => {
   return (
     <>
-      <div className=" grid grid-cols-2 items-center justify-between px-10 pt-10 pb-8">
+      <div className=" grid grid-cols-2 items-center justify-between px-10 pt-10 pb-8" id="Home">
         <div className=" flex flex-col gap-8 pt-24 pb-14">
           <h1 className=" text-[3.3rem] font-extrabold leading-[64px]">
             I'm 

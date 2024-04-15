@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const Navbar = () => {
@@ -7,10 +8,18 @@ const Navbar = () => {
         HARIHARA GOPALAN
       </h1>
       <div className=" flex items-center gap-5 font-medium text-stone-200 font-Noto-sans">
-        <button className="hover:text-primary duration-500">Home</button>
-        <button className="hover:text-primary duration-500">About</button>
-        <button className="hover:text-primary duration-500">Skills</button>
-        <button className="hover:text-primary duration-500">Service</button>
+        <Link href={"#Home"} className="hover:text-primary duration-500">
+          Home
+        </Link>
+        <Link href={"#About"} className="hover:text-primary duration-500">
+          About
+        </Link>
+        <Link href={"#Skills"} className="hover:text-primary duration-500">
+          Skills
+        </Link>
+        <Link href={"#Service"} className="hover:text-primary duration-500">
+          Service
+        </Link>
       </div>
       <div>
         <button className=" group/button overflow-hidden relative border border-primary py-1 px-4 text-primary font-medium rounded-sm ">

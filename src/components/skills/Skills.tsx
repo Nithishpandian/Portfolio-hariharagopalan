@@ -3,7 +3,7 @@ import { SiKalilinux } from "react-icons/si";
 
 const Skills = () => {
   return (
-    <div className=" px-10 py-10 flex flex-col gap-10 relative">
+    <div className=" px-10 py-10 flex flex-col gap-10 relative" id="Skills">
       <div className="absolute w-full h-full blur-2xl z-0 bg-gradient-radial from-neutral-950 left-0 top-0"></div>
       <div className=" flex flex-col gap-1.5 justify-center items-center text-center">
         <h1 className=" text-stone-50 z-0 font-bold text-3xl font-Noto-sans">My skills</h1>

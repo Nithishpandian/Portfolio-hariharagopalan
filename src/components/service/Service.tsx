@@ -3,7 +3,7 @@ import { IoMdArrowUp } from "react-icons/io";
 
 const Service = () => {
   return (
-    <div className=" px-10 py-10 flex flex-col gap-10">
+    <div className=" px-10 py-10 flex flex-col gap-10" id="Service">
       <div className=" flex flex-col gap-1.5 justify-center items-center text-center">
         <h1 className=" text-stone-50 font-bold text-3xl font-Noto-sans">
           My Services
