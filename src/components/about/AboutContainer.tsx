@@ -1,6 +1,7 @@
 "use client";
 import React, { useRef, useEffect, useState } from "react";
 import CountUp from "react-countup";
+import { motion } from "framer-motion";
 
 const AboutContainer = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -10,7 +11,7 @@ const AboutContainer = () => {
     const options = {
       root: null,
       rootMargin: "0px",
-      threshold: 0.5, // Change this threshold value based on when you want the count-up to start
+      threshold: 0.5,
     };
 
     const observer = new IntersectionObserver((entries) => {
@@ -29,15 +30,41 @@ const AboutContainer = () => {
     };
   }, []);
 
+  const AboutAnimationVariantLeft = {
+    initial: {
+      opacity: 0,
+      x: -100,
+    },
+    animate: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        duration: 1,
+        ease: "easeInOut",
+      },
+    },
+  };
+
   return (
-    <div className="grid grid-cols-3 gap-10 justify-around px-12 pt-24 pb-16 relative" id="About">
+    <div
+      className="grid grid-cols-3 gap-10 justify-around px-12 pt-24 pb-16 relative"
+      id="About"
+    >
       <div className="absolute mt-16 w-[650px] h-[450px] blur-3xl z-0 bg-gradient-conic from-zinc-950 left-0 top-0"></div>
-      <div className="flex flex-col gap-5 z-0">
+      <motion.div
+        variants={AboutAnimationVariantLeft}
+        initial="initial"
+        whileInView={"animate"}
+        viewport={{
+          once: true,
+        }}
+        className="flex flex-col gap-5 z-0"
+      >
         <h2 className="text-primary font-bold text-lg">ABOUT ME</h2>
         <h1 className="text-[#fafafa] text-[2.6rem] leading-snug font-black">
           A Cyber Security Specialist & Consultant
         </h1>
-      </div>
+      </motion.div>
       <div className="col-span-2 flex flex-col gap-4">
         <h1 className="text-[#fafafa] text-[1.6rem] font-bold">
           I have also been involved in conducting technical sessions, workshops,
@@ -60,7 +87,7 @@ const AboutContainer = () => {
             <p className="text-primary text-xs font-semibold">CERTIFICATION</p>
             {isVisible && (
               <div className="font-extrabold text-stone-50 text-xl">
-                <CountUp start={0} end={10} duration={2} />
+                <CountUp start={500} end={10} duration={3} />
                 <span className="ml-1">+</span>
               </div>
             )}
@@ -69,7 +96,7 @@ const AboutContainer = () => {
             <p className="text-primary text-xs font-semibold">EXPERIENCE</p>
             {isVisible && (
               <div className="font-extrabold text-stone-50 text-xl">
-                <CountUp start={0} end={16} duration={3} />
+                <CountUp start={500} end={16} duration={3} />
                 <span className="ml-1">+ Years</span>
               </div>
             )}
@@ -78,7 +105,7 @@ const AboutContainer = () => {
             <p className="text-primary text-xs font-semibold">PROJECTS</p>
             {isVisible && (
               <div className="font-extrabold text-stone-50 text-xl">
-                <CountUp start={0} end={40} duration={5} />
+                <CountUp start={500} end={40} duration={3} />
                 <span className="ml-1">+</span>
               </div>
             )}

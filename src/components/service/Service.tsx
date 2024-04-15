@@ -1,7 +1,29 @@
+"use client";
 import React from "react";
 import { IoMdArrowUp } from "react-icons/io";
+import { motion } from "framer-motion";
 
 const Service = () => {
+  const container = {
+    hidden: { opacity: 1, scale: 0 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        delayChildren: 0.3,
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
+  const item = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+    },
+  };
+
   return (
     <div className=" px-10 py-10 flex flex-col gap-10" id="Service">
       <div className=" flex flex-col gap-1.5 justify-center items-center text-center">
@@ -14,12 +36,21 @@ const Service = () => {
           facilis voluptate officia vel debitis!
         </p>
       </div>
-      <div className=" grid grid-cols-2 gap-x-5 gap-y-4 justify-around">
-        <ServiceCard />
-        <ServiceCard />
-        <ServiceCard />
-        <ServiceCard />
-      </div>
+      <motion.div
+        variants={container}
+        initial="hidden"
+        whileInView={"visible"}
+        viewport={{
+          once: true,
+        }}
+        className=" grid grid-cols-2 gap-x-5 gap-y-4 justify-around container"
+      >
+        {[0, 1, 2, 3].map((index) => (
+          <motion.div key={index} className="item" variants={item}>
+            <ServiceCard />
+          </motion.div>
+        ))}
+      </motion.div>
     </div>
   );
 };

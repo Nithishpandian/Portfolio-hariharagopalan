@@ -1,12 +1,42 @@
+"use client"
 import React from "react";
 import srecLogo from "../../assets/srec-logo.png";
 import Image from "next/image";
 import { IoMdArrowUp } from "react-icons/io";
 import { MdOutlineWork } from "react-icons/md";
+import { motion } from "framer-motion";
 
 const Experience = () => {
+  const container = {
+    hidden: { opacity: 1, scale: 0 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        delayChildren: 0.3,
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
+  const item = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+    },
+  };
+
   return (
-    <div className=" grid grid-cols-2 items-center justify-center gap-y-5 gap-x-8 py-10 px-20 relative">
+    <motion.div
+      variants={container}
+      initial="hidden"
+      whileInView={"visible"}
+      viewport={{
+        once: true,
+      }}
+      className=" grid grid-cols-2 items-center justify-center gap-y-5 gap-x-8 py-10 px-20 relative container"
+    >
       <div className="absolute w-full h-full blur-2xl z-0 bg-gradient-radial from-neutral-900 left-0 top-0"></div>
       <div className=" flex justify-center px-1 z-0">
         <div className=" w-[500px] flex flex-col gap-0.5">
@@ -21,10 +51,12 @@ const Experience = () => {
           </p> */}
         </div>
       </div>
-      <ExperienceCard />
-      <ExperienceCard />
-      <ExperienceCard />
-    </div>
+      {[0, 1, 2].map((index) => (
+        <motion.div key={index} className="item grid grid-cols-1 items-center justify-center gap-y-5 gap-x-8" variants={item}>
+          <ExperienceCard />
+        </motion.div>
+      ))}
+    </motion.div>
   );
 };
 
@@ -32,7 +64,10 @@ export default Experience;
 
 const ExperienceCard = () => {
   return (
-    <div className=" group flex items-center justify-center z-0 cursor-pointer" id="Experience">
+    <div
+      className=" group flex items-center justify-center z-0 cursor-pointer"
+      id="Experience"
+    >
       <div className=" border-b border-stone-500 py-4 group-hover:px-4 duration-500 px-1 w-[550px] flex items-center justify-between">
         <div className=" flex items-center gap-2">
           <Image

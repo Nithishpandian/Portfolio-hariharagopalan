@@ -1,12 +1,32 @@
+"use client"
 import Image from "next/image";
 import React from "react";
 import indiaFlag from "../../assets/india-flag.png";
+import { motion } from "framer-motion";
+import {
+  AnimationVariantLeft,
+  AnimationVariantRight,
+  AnimationVariantTop,
+  AnimationVariantbottom,
+  animationVariantPlace,
+} from "./animation/TestimonialsAnimation";
 
 const Testimonials = () => {
   return (
-    <div className=" grid grid-cols-4 grid-rows-2 gap-4 items-center justify-between px-10 pt-20 pb-24 relative" id="Testimonials">
+    <div
+      className=" grid grid-cols-4 grid-rows-2 gap-4 items-center justify-between px-10 pt-20 pb-24 relative"
+      id="Testimonials"
+    >
       <div className="absolute w-full h-[500px] bg-gradient-radial blur-3xl z-0 from-[#030805] right-0 top-[20%]"></div>
-      <div className=" group hover:border-stone-500 hover:rounded duration-500 flex flex-col gap-5 col-span-2 bg-gradient-to-tr from-stone-900 to-stone-800 shadow-lg border border-stone-700 backdrop-filter backdrop-blur-lg bg-opacity-30 px-5 py-5 rounded-md h-full w-full cursor-pointer">
+      <motion.div
+        variants={AnimationVariantLeft}
+        initial="initial"
+        whileInView={"animate"}
+        viewport={{
+          once: true,
+        }}
+        className=" group hover:border-stone-500 hover:rounded duration-500 flex flex-col gap-5 col-span-2 bg-gradient-to-tr from-stone-900 to-stone-800 shadow-lg border border-stone-700 backdrop-filter backdrop-blur-lg bg-opacity-30 px-5 py-5 rounded-md h-full w-full cursor-pointer"
+      >
         <div className=" flex items-center gap-3">
           <Image
             src={indiaFlag}
@@ -30,8 +50,16 @@ const Testimonials = () => {
           cupiditate iure delectus illo ullam perferendis voluptates? Qui
           reprehenderit perferendis, voluptatem asperiores voluptas tenetur.
         </p>
-      </div>
-      <div className=" group hover:border-stone-500 hover:rounded duration-500 flex flex-col gap-5 bg-gradient-to-t from-neutral-900 to-neutral-800 shadow-lg border border-stone-700 backdrop-filter backdrop-blur-lg bg-opacity-30 px-5 py-5 rounded-md h-full w-full cursor-pointer">
+      </motion.div>
+      <motion.div
+        variants={AnimationVariantTop}
+        initial="initial"
+        whileInView={"animate"}
+        viewport={{
+          once: true,
+        }}
+        className=" group hover:border-stone-500 hover:rounded duration-500 flex flex-col gap-5 bg-gradient-to-t from-neutral-900 to-neutral-800 shadow-lg border border-stone-700 backdrop-filter backdrop-blur-lg bg-opacity-30 px-5 py-5 rounded-md h-full w-full cursor-pointer"
+      >
         <div className=" flex items-center gap-3">
           <Image
             src={indiaFlag}
@@ -52,8 +80,16 @@ const Testimonials = () => {
           corrupti eum velit explicabo possimus error rerum repellendus
           consequatur nulla!
         </p>
-      </div>
-      <div className=" group hover:border-stone-500 hover:rounded duration-500 flex flex-col gap-5 row-span-2 bg-gradient-to-l from-zinc-900 to-zinc-800 shadow-lg border border-stone-700 backdrop-filter backdrop-blur-lg bg-opacity-30 px-5 py-5 rounded-md h-full w-full cursor-pointer">
+      </motion.div>
+      <motion.div
+        variants={AnimationVariantRight}
+        initial="initial"
+        whileInView={"animate"}
+        viewport={{
+          once: true,
+        }}
+        className=" group hover:border-stone-500 hover:rounded duration-500 flex flex-col gap-5 row-span-2 bg-gradient-to-l from-zinc-900 to-zinc-800 shadow-lg border border-stone-700 backdrop-filter backdrop-blur-lg bg-opacity-30 px-5 py-5 rounded-md h-full w-full cursor-pointer"
+      >
         <div className=" flex items-center gap-3">
           <Image
             src={indiaFlag}
@@ -77,8 +113,16 @@ const Testimonials = () => {
           recusandae natus voluptatem rerum sunt earum accusamus, voluptas autem
           molestiae pariatur laborum. Minima, quod temporibus!
         </p>
-      </div>
-      <div className=" group hover:border-stone-500 hover:rounded duration-500 flex flex-col gap-5 bg-gradient-to-tr from-stone-900 to-zinc-800 shadow-lg border border-stone-700 backdrop-filter backdrop-blur-lg bg-opacity-30 px-5 py-5 rounded-md h-full w-full cursor-pointer">
+      </motion.div>
+      <motion.div
+        variants={AnimationVariantbottom}
+        initial="initial"
+        whileInView={"animate"}
+        viewport={{
+          once: true,
+        }}
+        className=" group hover:border-stone-500 hover:rounded duration-500 flex flex-col gap-5 bg-gradient-to-tr from-stone-900 to-zinc-800 shadow-lg border border-stone-700 backdrop-filter backdrop-blur-lg bg-opacity-30 px-5 py-5 rounded-md h-full w-full cursor-pointer"
+      >
         <div className=" flex items-center gap-3">
           <Image
             src={indiaFlag}
@@ -99,8 +143,16 @@ const Testimonials = () => {
           asperiores quis accusamus necessitatibus ducimus voluptatem! Iste
           eligendi aliquam odio.
         </p>
-      </div>
-      <div className=" group hover:border-stone-500 hover:rounded duration-500 flex flex-col gap-5 col-span-2 bg-gradient-to-tl from-stone-900 via-stone-800 to-zinc-800 shadow-lg border border-stone-700 backdrop-filter backdrop-blur-lg bg-opacity-30 px-5 py-5 rounded-md h-full w-full cursor-pointer">
+      </motion.div>
+      <motion.div
+        variants={animationVariantPlace}
+        initial="initial"
+        whileInView={"animate"}
+        viewport={{
+          once: true,
+        }}
+        className=" group hover:border-stone-500 hover:rounded duration-500 flex flex-col gap-5 col-span-2 bg-gradient-to-tl from-stone-900 via-stone-800 to-zinc-800 shadow-lg border border-stone-700 backdrop-filter backdrop-blur-lg bg-opacity-30 px-5 py-5 rounded-md h-full w-full cursor-pointer"
+      >
         <div className=" flex items-center gap-3">
           <Image
             src={indiaFlag}
@@ -123,7 +175,7 @@ const Testimonials = () => {
           maiores voluptas, ducimus nihil sunt quibusdam libero expedita?
           Quidem, vitae ullam?
         </p>
-      </div>
+      </motion.div>
     </div>
   );
 };
