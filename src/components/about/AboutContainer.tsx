@@ -47,10 +47,10 @@ const AboutContainer = () => {
 
   return (
     <div
-      className="grid grid-cols-3 gap-10 justify-around px-12 pt-24 pb-16 relative"
+      className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 lg:gap-10 justify-around px-4 md:px-6 xl:px-12 pt-24 pb-16 relative"
       id="About"
     >
-      <div className="absolute mt-16 w-[650px] h-[450px] blur-3xl z-0 bg-gradient-conic from-zinc-950 left-0 top-0"></div>
+      <div className="absolute md:mt-16 w-60 sm:w-[600px] h-[450px] blur-3xl z-0 bg-gradient-conic from-zinc-950 left-0 top-0"></div>
       <motion.div
         variants={AboutAnimationVariantLeft}
         initial="initial"
@@ -61,17 +61,17 @@ const AboutContainer = () => {
         className="flex flex-col gap-5 z-0"
       >
         <h2 className="text-primary font-bold text-lg">ABOUT ME</h2>
-        <h1 className="text-[#fafafa] text-[2.6rem] leading-snug font-black">
+        <h1 className="text-[#fafafa] text-3xl sm:text-4xl lg:text-[2.6rem] leading-snug font-black">
           A Cyber Security Specialist & Consultant
         </h1>
       </motion.div>
       <div className="col-span-2 flex flex-col gap-4">
-        <h1 className="text-[#fafafa] text-[1.6rem] font-bold">
+        <h1 className="text-[#fafafa] text-xl sm:text-2xl sm:text-[1.6rem] font-bold">
           I have also been involved in conducting technical sessions, workshops,
           and seminars on cybersecurity, blockchain, and network domains for
           students, faculty, and industry professionals.
         </h1>
-        <p className="text-stone-300">
+        <p className="text-stone-300 text-sm lg:text-base">
           Additionally, I have been providing security consulting and
           penetration testing services to startups and organizations, helping
           them to protect their digital assets and systems from cyber threats.

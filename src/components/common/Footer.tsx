@@ -8,10 +8,10 @@ import { MdEmail } from "react-icons/md";
 const Footer = () => {
   return (
     <div className=" flex flex-col items-center justify-center gap-2 border-t border-stone-500 py-6 px-24 backdrop-filter backdrop-blur-lg bg-opacity-30 relative">
-      <div className="absolute w-[500px] h-full blur-2xl -z-10 bg-gradient-radial from-neutral-900 left-0 top-0"></div>
-      <div className=" w-[480px] text-center flex flex-col gap-3">
+      <div className="absolute w-60 sm:w-[500px] h-full blur-2xl -z-10 bg-gradient-radial from-neutral-900 left-0 top-0"></div>
+      <div className=" sm:w-[480px] text-center flex flex-col gap-3">
         <h1 className=" text-stone-200 font-bold text-3xl">Harihara Gopalan</h1>
-        <p className=" text-stone-500 text-sm">
+        <p className=" text-stone-500 text-xs sm:text-sm">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum placeat
           dolor voluptas ipsam doloremque, omnis doloribus ducimus eaque
           consequuntur similique.
